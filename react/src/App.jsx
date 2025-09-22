@@ -1,35 +1,25 @@
-import { useState, version } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import {jsx as _jsx} from 'react/jsx-runtime';
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React {version}</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+export const App = () => {
+  return (<div>
+    <div><img src="GOT.jpg" alt="game of thrones image"  width="100%"height="40%"/></div>
+    <h1>NAME : Game Of Thrones</h1>
+    <h3>Rating:5</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, 
+      ipsum et optio tempora soluta nobis reiciend
+      is perspiciatis omnis cumque ratione qui amet vel pa
+      riatur harum sed sint eveniet maiores in.
+    </p>
+    </div>
   )
-}
+};
+// export const App = () => {
+//   return _jsx('h1', {
+//     children: 'Hello World from React .jsx',
+//     name: 'akash'
+//   });
+// }
 
-export default App
+// console.log(React.createElement('h2', null, 'Hello World from React .createElement'));
